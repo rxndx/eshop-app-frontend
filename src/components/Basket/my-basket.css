@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+.information {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 4rem;
+}
+
+.product-contains {
+    grid-column-start: span 3;
+    grid-column-end: span 3;
+}
+
+.submit-product {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.sale-price, .table-cell {
+    justify-content: flex-start;
+}
+
+.button-link {
+    position: relative;
+    background-color:#0a0a23;
+    color: #fff;
+    max-width: 100%;
+    height: auto;
+    padding: 12px;
+    border-radius: 10px; 
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button-text {
+    width: fit-content;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.items-table {
+    width: 100%;
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+}
+
+.product-info {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.im-product {
+    display: flex;
+    justify-content: center;
+}
+
+.text-name {
+    font-weight: 600;
+}
+
+.text-name {
+    color: #737373;
+    text-decoration-line: underline;
+}
+
+@media (min-width: 768px) {
+    .table-cell {
+        display: table-cell;
+    }
+}
+
+#shopping-card-items .items-table thead td {
+    border-top: 0;
+}
+
+#shopping-card-items .items-table thead td:first-child {
+    width: 60%;
+    text-align: left;
+    padding-left: 0;
+}
+
+table.listin td, table.listin th {
+    font-family: 'Montserrat', sans-serif;
+    border-left: 0;
+    border-right: 0;
+    padding: 1rem;
+}
+
+table td {
+    border: 1px solid var(--divider);
+}

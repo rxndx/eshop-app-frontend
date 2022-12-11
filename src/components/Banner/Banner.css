@@ -1,0 +1,25 @@
+.main-banner {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 490px;
+    position: relative;
+    background-color:dimgray;
+    border: 1px solid whitesmoke;
+}
+
+.__main-banner-container-text {
+    text-align: center;
+    padding-top: 164px;
+    font-size: 1cm;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner-container-main-text {
+    letter-spacing: 0;
+    color:aliceblue;
+}
+
+.extraction-products {
+    grid-template-columns: repeat(5,minmax(0,1fr));
+}

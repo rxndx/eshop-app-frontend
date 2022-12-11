@@ -1,0 +1,24 @@
+.footer {
+    background-color: #f6f6f6;
+    margin-top: 9rem;
+    border-top: 1px solid #ddd;
+    max-width: 100%;
+}
+
+.footer-information {
+  display: flex;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  justify-content: space-between;
+}
+
+.donut-card {
+  justify-content: flex-start;
+  padding: 20px;
+  display: flex;
+}
+
+.copyrit {
+  align-self: center;
+  font-size: 13px;
+  text-align: right;
+}

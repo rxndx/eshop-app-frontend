@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+.content {
+    padding: 1px;
+    overflow: hidden;
+}
+
+span{
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 40px 0 0 0;
+  perspective: 1000px;
+}
+span a{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+}
+span a:before,
+span a:after{
+  position: absolute;
+  content: "View";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+span a:before{
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after{
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.snap-slider {
+    position: relative;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.snap-slider_information {
+    display: flex;
+    width: 100%;
+    scroll-snap-type: both mandatory;
+}
+
+.snap-slider_item {
+    flex: 1 0 auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 112px;
+    padding: 7px 4px;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+}
+
+.snap-slinder-item_link {
+    display: block;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 7%);
+    border-radius: 4px;
+    color: #303030;
+    padding: 25px 8px 8px;
+    transition: all .3s ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    word-break: break-word;
+}
+
+.slinder-icon {
+    opacity: 1;
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 11px;
+    transition: opacity .2s ease-in-out;
+}
+
+.some-products {
+    margin-top: 1.5rem;
+    padding: 0 22px;
+}
+
+.extraction-products {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    margin-bottom: 50px;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+}
+
+.named-product,.information-product, .button-link {
+    word-spacing: 9px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.named-product {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.information-product {
+    margin-bottom: 1rem;
+    margin-bottom: 25px;
+}
+
+.button-link {
+    position: relative;
+    background-color:#0a0a23;
+    color: #fff;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    padding: 12px;
+    letter-spacing: 1px;
+}

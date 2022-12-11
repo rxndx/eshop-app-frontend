@@ -1,0 +1,158 @@
+.edit-button {
+    margin-left: 35%;
+}
+
+.product-information {
+    max-width: 1200px;
+    margin: 100px;
+    padding: 0 22px;
+}
+
+.product-name {
+    text-transform: capitalize;
+}
+
+.product-current-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .md\:grid-cols-2 {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+
+.gap-3 {
+    gap: 3rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.basket-button {
+    width: fit-content;
+    height: 100%;
+    margin: 0;
+}
+
+.reviews-section {
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+    margin: 50px 50px 0 50px;
+}
+
+.shareCommentContainer{
+    background: none repeat scroll 0 0 #f5f5f5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    width: 60%;
+    margin: 50px;
+  }
+  
+  .shareCommentContainer textarea {
+    height: 100%;
+    padding: 20px 0 20px;
+    width: 100%;
+    border: 1px solid #F2F2F2;
+    outline: none;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -ms-border-radius: 4px 4px 0 0;
+    -o-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    color: #777777;
+    font-family: Lato;
+    font-size: 14px
+  }
+  
+  .shareCommentContainer .btn-success{
+    padding: 6px 15px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    margin-left: 9px;
+    border: medium none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    color: #fff;
+  }
+  
+  .shareCommentContainer button:hover{
+    cursor: pointer;
+    background-color: #008000;
+  }
+  
+  .commentContainer {
+    position: relative;
+    max-width:  60%;
+    height: auto;
+    margin: 20px 10px;
+    padding: 10px;
+    border: 1px solid #f5f5f5;
+    box-shadow: rgba(0, 0, 0, 0.3) 7px 7px 7px;
+    border-radius: 4px;  
+  }
+  
+  .commentText {
+    min-height: 30px;
+    border-radius: 3px;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #797979;
+  }
+  
+  .commentText > textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #F2F2F2;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -ms-border-radius: 4px 4px 0 0;
+    -o-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+  }
+  
+  .commentContainer button{
+    margin-right : 10px;
+    margin-top: 20px;
+    padding: 6px 12px;
+    color: #333;
+    background-color: #F5F5F5;
+    border: medium none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #DCDCDC;
+    outline:none;
+    display: contents;
+  }
+  
+  .commentContainer button:hover{
+    cursor: pointer;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+    width: fit-content;
+    display: contents;
+  }
