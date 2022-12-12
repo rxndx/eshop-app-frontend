@@ -17,6 +17,7 @@ import Item from '../Item/Item';
 import Banner from '../Banner/Banner';
 import Footer from '../Footer/Footer';
 import NotFound from '../NotFound/NotFound';
+import {JwtRedirect} from '../JwtRedirect/JwtRedirect';
 
 //includes
 import './App.css';
@@ -36,6 +37,7 @@ function App() {
           <Route path='/me'><Profile/></Route>
           <Route path='/categories'><Product/></Route>
           <Route path='/products'><Item/></Route>
+          <Route path='/obtain-token'><JwtRedirect /></Route>
           <Route path='*'><NotFound/></Route>
         </Switch>
       <Route exact path={['/', '/profile', '/basket', '/products']}><Footer/></Route>
