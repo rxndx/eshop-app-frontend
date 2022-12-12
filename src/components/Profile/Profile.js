@@ -40,11 +40,12 @@ function Profile() {
                                 </div>
                                 <div>
 
-                                    {axios.get("http://localhost:8080/me", {headers: {
-                                            'Authorization': ('Bearer ' + localStorage.getItem('jwt'))
-                                    }}).then(function (response) {
-                                        alert(response.data.email)
-                                    })}
+                                    {console.log(localStorage.getItem('jwt'))}
+                                    {/*{axios.get("http://localhost:8080/me", {headers: {*/}
+                                    {/*        'Authorization': ('Bearer ' + localStorage.getItem('jwt'))*/}
+                                    {/*}}).then(function (response) {*/}
+                                    {/*    alert(response.data.email)*/}
+                                    {/*})}*/}
 
 
 

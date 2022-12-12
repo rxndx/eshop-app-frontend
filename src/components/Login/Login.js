@@ -26,7 +26,7 @@ function Login(){
       <div className="fb_connect" onClick={() => {
 
           axios.get('http://localhost:8080/oauth2/facebook/v15.0').then((function (response) {
-              window.open(response.data.tokenRequestUrl, '_this');
+              window.open(response.data.tokenRequestUrl, '_self');
           }))
       }}>Sign in with Facebook</div>
       <input

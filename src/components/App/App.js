@@ -17,7 +17,7 @@ import Item from '../Item/Item';
 import Banner from '../Banner/Banner';
 import Footer from '../Footer/Footer';
 import NotFound from '../NotFound/NotFound';
-import JwtRedirect from '../JwtRedirect/JwtRedirect';
+import {JwtRedirect} from '../JwtRedirect/JwtRedirect';
 
 //includes
 import './App.css';
