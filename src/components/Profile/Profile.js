@@ -1,7 +1,18 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import axios from "axios";
 
 function Profile() {
+
+    const [emailtest, setEmailtest] = useState('initial email')
+
+    useEffect(() => {
+        axios.get("http://localhost:8080/me", {headers:
+                {'Authorization': ('Bearer ' + localStorage.getItem('jwt'))}
+        }).then(function (response) {
+            setEmailtest(response.data.email)
+        })
+    })
+
     return (
         <section class="my-account">
             <div>
@@ -40,15 +51,7 @@ function Profile() {
                                 </div>
                                 <div>
 
-                                    {console.log(localStorage.getItem('jwt'))}
-                                    {/*{axios.get("http://localhost:8080/me", {headers: {*/}
-                                    {/*        'Authorization': ('Bearer ' + localStorage.getItem('jwt'))*/}
-                                    {/*}}).then(function (response) {*/}
-                                    {/*    alert(response.data.email)*/}
-                                    {/*})}*/}
-
-
-
+                                    <div>{emailtest}</div>
                                 </div>
                             </div>
                         </div>
