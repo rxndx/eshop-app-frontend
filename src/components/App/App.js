@@ -1,5 +1,5 @@
 //dependencies
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route,  } from "react-router-dom";
 
 //history
@@ -24,6 +24,9 @@ import './App.css';
 
 //Run
 function App() {
+
+  const [isLoggedin, setIsLoggedin] = useState(false);
+
   return (
     <div>
       <Router history={history}>

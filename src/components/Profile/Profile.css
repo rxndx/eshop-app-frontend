@@ -8,14 +8,12 @@
     display: flex;
     justify-content: center;
 
-    height: 4rem;
-    width: 4rem;
+    width: 8rem;
 }
 
 .avatar__image {
     height: 100%;
     width: 100%;
-    background-color: black;
 }
 
 .text-center {
