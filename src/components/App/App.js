@@ -1,5 +1,5 @@
 //dependencies
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route,  } from "react-router-dom";
 
 //history
@@ -24,13 +24,10 @@ import './App.css';
 
 //Run
 function App() {
-
-  const [isLoggedin, setIsLoggedin] = useState(false);
-
   return (
     <div>
       <Router history={history}>
-      <Route exact path={['/', '/profile', '/basket', '/products']}><Header/></Route>
+      <Route exact path={['/', '/profile', '/basket', '/products', '/me']}><Header/></Route>
       <Route exact path={['/']}><Banner/></Route>
         <Switch>
           <Route exact path='/'><Home /></Route>
@@ -43,7 +40,7 @@ function App() {
           <Route path='/obtain-token'><JwtRedirect /></Route>
           <Route path='*'><NotFound/></Route>
         </Switch>
-      <Route exact path={['/', '/profile', '/basket', '/products']}><Footer/></Route>
+      <Route exact path={['/', '/profile', '/basket', '/products', '/me']}><Footer/></Route>
       </Router>
     </div>
   );

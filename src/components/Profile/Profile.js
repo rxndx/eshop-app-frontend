@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
 
-function Profile(setIsLoggedin) {
+function Profile() {
 
     const [username, setUsername] = useState('initial username');
     const [email, setEmail] = useState('initial email');
@@ -22,7 +22,6 @@ function Profile(setIsLoggedin) {
             setUsername(response.data.name)
             setEmail(response.data.email)
             setImages(response.data.image)
-            setIsLoggedin = true;
             console.log("1 " + images);
         })
     }
