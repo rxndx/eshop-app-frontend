@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from '../../images/logo.svg';
 import axios from "axios";
 
-function Login(){
+function Login() {
 
   return (
     <section className="login">
@@ -23,11 +23,15 @@ function Login(){
           <span className="login__input-error"></span>
         </fieldset>
       </form>
-      <div className="fb_connect" onClick={() => {
+      <div>
+        <a class="fb btn" onClick={() => {
           axios.get('http://localhost:8080/oauth2/facebook/v15.0').then((function (response) {
-              window.open(response.data.tokenRequestUrl, '_self');
+            window.open(response.data.tokenRequestUrl, '_self');
           }))
-      }}>Sign in with Facebook</div>
+        }}>
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+        </a>
+      </div>
       <input
         class="checkbox"
         type="checkbox"

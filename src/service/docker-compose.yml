@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   application:
-    image: greferfeed/eshop
+    image: greferfeed/eshop:testdata
     ports:
       - ${APPLICATION_PORT}:${APPLICATION_PORT}
     volumes:

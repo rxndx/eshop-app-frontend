@@ -50,7 +50,7 @@ return (
             <div class="account-details page-width mt-3 grid grid-cols-1 md:grid-cols-3 gap-3">
                 <div class="account-details-main border-textSubdued border-textSubdued">
                     <h2>Account Details</h2>
-                    <button class="text-interactive" 
+                    <button class="edit-button" 
                     // onClickCapture={logout}
                     >Logout</button>
                 </div>

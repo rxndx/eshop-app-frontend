@@ -95,7 +95,7 @@ span a:hover{
 }
 
 .some-products {
-    margin-top: 1.5rem;
+    margin-top: 5rem;
     padding: 0 22px;
 }
 
@@ -113,6 +113,10 @@ img {
     max-width: 80%;
     height: auto;
     display: block;
+}
+
+.product-image {
+    max-width: 100px;
 }
 
 .named-product,.information-product, .button-link {
