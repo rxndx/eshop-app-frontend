@@ -27,7 +27,7 @@ function App() {
   return (
     <div>
       <Router history={history}>
-      <Route exact path={['/', '/profile', '/basket', '/products', '/me']}><Header/></Route>
+      <Route exact path={['/', '/profile', '/basket', '/products', '/me', '/categories']}><Header/></Route>
       <Route exact path={['/']}><Banner/></Route>
         <Switch>
           <Route exact path='/'><Home /></Route>
@@ -40,7 +40,7 @@ function App() {
           <Route path='/obtain-token'><JwtRedirect /></Route>
           <Route path='*'><NotFound/></Route>
         </Switch>
-      <Route exact path={['/', '/profile', '/basket', '/products', '/me']}><Footer/></Route>
+      <Route exact path={['/', '/profile', '/basket', '/products', '/me', '/categories']}><Footer/></Route>
       </Router>
     </div>
   );
